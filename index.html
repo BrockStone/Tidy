@@ -1,4 +1,9 @@
 <!DOCTYPE HTML>
+<!-- 
+
+9/10/2013 // PROJECT: TIDY TASK MANAGER // AUTHOR: BROCK STONE // FOR: SWA-2 FULL SAIL UNIVERSITY 
+
+ -->
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
 <!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
@@ -18,31 +23,26 @@
 </head>
 
 <body>
-
+	<!-- NAVIGATION -->
 	<div class="menu">
 		<div class="container clearfix">
-
 			<div id="logo" class="grid_3">
 				<img src="images/TidyLogo.png">
 			</div>
-
 			<div id="nav" class="grid_9 omega">
 				<ul class="navigation">
 					<li data-slide="1">Home</li>
 					<li data-slide="2">About</li>
 					<li data-slide="3">Sign Up</li>
-					<li data-slide="4">Sign In</li>
+					<li id="signinbtn" data-slide="4">Sign In</li>
 				</ul>
 			</div>
-
 		</div>
 	</div>
 
-
+	<!-- CTA (Home page) -->
 	<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
-
-			
 			<div class="grid_5">
 				<p>“Improve organizational skills, manage time and get what you need done with help from Tidy”.</p>
 				<h3>-Every Day Tidy User</h3>
@@ -50,59 +50,47 @@
 					<li data-slide="3" id="button">Start Being Tidy!</li>
 				</ul>
 			</div>
-		
-
 			<div id="ctaImage" class="grid_7 omega">
 				<p><img src="images/iphone.png"></p>
 			</div>
-
 		</div>
 	</div>
 
-
-
+	<!-- ABOUT (About page) -->
 	<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
-
+			<!-- TIME MANG. -->
 			<div class="grid_4 about">
-				
 				<p><img src="images/stopwatch.png"></p>
 				<h2>Time Managment</h2>
 				<p>Manage your time. Tidy will help keep you up to date with all your current projects and tasks that need attention.</p>
-				
 			</div>
+			<!-- ORGANIZATION -->
 			<div class="grid_4 about">
-				
 				<p><img src="images/folder.png"></p>
 				<h2>Organization</h2>
 				<p>Let Tidy organized all your tasks, letting you know what needs taken care of and when using Tidys color cordination..</p>
-				
 			</div>
+			<!-- PRODUCTIVITY -->
 			<div class="grid_4 about omega">
 				<p><img src="images/iphone2.png"></p>
 				<h2>Productivity</h2>
 				<p>On the go? Well Tidy has you covered, keeping track of your to-do’s even when you step away from your desktop.</p>
-				
 			</div>
-				<div class="grid_12 about">
+			<!-- SLOGAN -->
+			<div class="grid_12 about">
 				<h1>It Feels Good To Get Stuff Done!</h1>
-				
 			</div>
-			
-
-			
-
 		</div>
 	</div>
 
 
-
+	<!-- SIGN UP PAGE -->
 	<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
-
-	<h2 class="about">Sign up for Tidy it will always be FREE!</h2>
+		<h2 class="about">Sign up for Tidy it will always be FREE!</h2>
+		<h3>Helping keep your day to day tasks completed and of course..Tidy</h3>
 		<div class="container clearfix signup">
 			<div class="grid_6">
-			       
 				<form id="signupform">
 					<label for="firstname">First Name:</label>
 					<input type="text" id="firstname" name="Firstname">
@@ -110,23 +98,17 @@
 					<input type="text" id="lastname" name="password">
 					<label for="email">Email:</label>
 					<input type="text" id="email" name="password">
-					
 				</form>
-			
 			</div>
 			<div class="grid_6 omega">
-			       
-				<form id="signupform">
+			    <form id="signupform">
 					<label for="password">Password:</label>
 					<input type="password" id="password" name="password">
 					<label for="password">Re-Enter Password:</label>
 					<input type="password" id="password" name="password">
 				</form>
-
+				<!-- SIGN UP BTN -->
 				<p><a class="signupbtn" href="#">Sign Up</a></p>
-
-
-			
 			</div>
 		</div>
 	</div>
@@ -137,12 +119,35 @@
 		<div class="container clearfix">
 
 			<div id="content" class="grid_12">
+			<h2>Welcome back! Now lets do something Productive.</h2>
 				
+			</div>
+			<div class="grid_6">
+				<form id="signinform">
+					<label id="emaillabel"for="Email">Email:</label>
+					<input type="text" id="firstname" name="Firstname">
+					<input type="checkbox"><label for="checkbox">Keep me logged in</label>
+					
+				</form>
+			</div>
+			<div class="grid_6 omega">
+			    <form id="signinform">
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="password">
+					
+				</form>
+				<!-- SIGN UP BTN -->
+				<p><a class="signinbutton" href="#">Sign In</a></p>
 			</div>
 
 		</div>
 	</div>
 
+	<!-- 
+	//////////////////////////////////
+		  MY AWESOME JAVASCRIPT! 
+	//////////////////////////////////
+	-->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 	<script type="text/javascript" src="js/waypoints.min.js"></script>

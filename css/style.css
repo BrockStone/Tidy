@@ -1,12 +1,12 @@
-/* Global */
-
 /*
+	My Colors:
 
 	TIDY BLUE = #19345F
 	TIDY RED = #C83539
 
 */
 
+/* Global */
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
@@ -17,14 +17,58 @@ body {
 img {
 	max-width: 100%;
 }
+.omega{
+	margin-right: 0;
+}
 
+/* Tidy Logo */
+#logo {
+	text-align: center;
+	margin: 10px 0;
+}
 
-
-
-
+/* Just For Fun Logo Rotation on Hover */
+#logo:hover{
+	-webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 
 /* Navigation */
-
 .menu {
 	margin-top: -15px;
 	position:fixed;
@@ -32,16 +76,11 @@ img {
 	width:100%; 
 	height:70px; 
 	background-color:#ffffff;
-	
 	z-index:100;
-	-webkit-box-shadow: 0px 0px 4px 0px #3D3D3D;
-       -moz-box-shadow: 0px 0px 4px 0px #3D3D3D;
-            box-shadow: 0px 0px 4px 0px #3D3D3D;
+	-webkit-box-shadow: 0px 0px 4px 0px #000000;
+       -moz-box-shadow: 0px 0px 4px 0px #000000;
+            box-shadow: 0px 0px 4px 0px #000000;
 
-}
-#logo {
-	text-align: center;
-	margin: 10px 0;
 }
 #nav {
 	text-align: right;
@@ -66,26 +105,36 @@ img {
 	color: #C83539;
 	font-weight:bold;
 }
+/* Sign In Button */
+#signinbtn{
+	padding: 8px 25px;
+	background-color: #19345F;
+	margin-left: 50px;
+	margin-top: -7px;
+	color: #ffffff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
 
-
+#signinbtn:hover{
+	background-color: #2F5FA5;
+}
 
 
 /* General Slides */ 
-
 .slide{
 	background-attachment: fixed;
 	width:100%;
-	height:520px;
+	height:400px;
 	position: relative;
 	padding:160px 0;
 }
 
 
-
 /* Slide 1 */ 
-
 #slide1{
-	background-color:#ffffff;
+	background-image: url('../images/brick.jpg');
+	color: #ffffff;
 }
 #slide1 h1 {
 	font-size: 3.8em;
@@ -102,15 +151,37 @@ img {
 	font-weight: 400;
 }
 
-
-
+/* CTA */
+#ctaImage{
+	margin-right: 0px;
+}
+#ctaCaption{
+	font-size: 5em;
+}
+#slide1 p{
+	font-size: 2em;
+	padding-top: 20px;
+}
+#button{
+	margin-top: 55px;
+	margin-right: 60px;
+	margin-left: 0;
+	padding: 15px 80px;
+	border-radius: 25px;
+	color: #ffffff;
+	background-color: #C83539;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+#button:hover{
+	background-color: #E5414D;
+}
 
 /* Slide 2 */ 
-
 #slide2{
 	
 	background-color:#ffffff;
-	color:#9B9B9B;
+	color:#8a8683;
 }
 #slide2 h1 {
 	font-size: 3.8em;
@@ -128,13 +199,9 @@ img {
 	font-weight: 400;
 }
 
-
-
-
 /* Slide 3 */ 
-
 #slide3{
-	background-color:#ffffff;
+	background-image:url('../images/tidybg.png');
 }
 #slide3 h1 {
 	font-size: 3.8em;
@@ -144,11 +211,20 @@ img {
 	font-weight: 700;
 }
 #slide3 h2 {
-	font-size: 2em;
-	color: #8a8683;
+	padding-top: 20px;
+	font-size: 2.4em;
+	color: #19345F;
 	line-height: 0px;
 	padding-bottom:20px;
 	font-weight: 400;
+}
+#slide3 h3 {
+	font-size: 1em;
+	color: #19345F;
+	line-height: 0px;
+	padding-bottom:20px;
+	text-align: center;
+	
 }
 #test{
 	background-color:#bde2df;
@@ -158,14 +234,10 @@ img {
 	font-weight: 400;
 }
 
-
-
-
 /* Slide 4 */
-
 #slide4{
-	background-image:url('../images/sunglasses.png');
-	background-color:#8a8683;
+	background-image:url('../images/thumbs-up.jpg');
+	background-color:#ffffff;
 	color:#ffffff;
 }
 #slide4 h1 {
@@ -176,51 +248,17 @@ img {
 	font-weight: 700;
 }
 #slide4 h2 {
-	font-size: 2em;
-	color: #ffffff;
+	font-size: 2.3em;
+	color: #E5A24A;
 	line-height: 0px;
-	padding-bottom:20px;
+	padding-bottom:10px;
 	font-weight: 400;
+	text-align: center;
+	margin-top: 225px;
 }
 
 
-/*CTA*/
-
-#ctaImage{
-	margin-right: 0px;
-}
-
-#ctaCaption{
-	font-size: 5em;
-}
-
-.omega{
-	margin-right: 0;
-}
-
-#slide1 p{
-	font-size: 2em;
-	padding-top: 20px;
-}
-
-#button{
-	margin-top: 55px;
-	margin-right: 60px;
-	margin-left: 0;
-	padding: 15px 80px;
-	border-radius: 25px;
-	color: #ffffff;
-	background-color: #C83539;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-}
-
-#button:hover{
-	background-color: #E5414D;
-}
-
-
-/*Sign up*/
+/*Sign up Page*/
 #container {
 	width: 340px;
 	height: 280px;
@@ -246,7 +284,7 @@ label {
 }
 input {
     font-family: "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 22px;
     outline: none;
 }
 input[type=text],
@@ -261,10 +299,6 @@ input[type=password] {
     border: 1px solid #c7d0d2;
     border-radius: 2px;
     
-}
-
-
-
 }
 input[type=submit] {
     float: right;
@@ -300,15 +334,81 @@ input[type=submit] {
 	background-color: #E5414D;
 }
 
-#signupform{
-	margin-bottom: 50px;
+
+
+#signinform input[type=text]{
+	color: #777;
+    padding-left: 10px;
+    margin: 10px;
+    margin-top: 12px;
+    margin-left: 80px;
+    width: 350px;
+    height: 45px;
+    border: 1px solid #c7d0d2;
+    border-radius: 2px;
+    font-size: 25px;
+
+}
+#signinform input[type=password]{
+	color: #777;
+    padding-left: 10px;
+    margin: 10px;
+    margin-top: 12px;
+    margin-left: 0px;
+    width: 350px;
+    height: 45px;
+    border: 1px solid #c7d0d2;
+    border-radius: 2px;
+    font-size: 25pt;
+
+}
+#signinform input[type=checkbox]{
+	color: #777;
+    margin-left: 80px;
+    margin-right: 25px;
+    margin-top: 20px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #c7d0d2;
+    border-radius: 2px;
+
+}
+#signinform label{
+	color: #ffffff;
+	font-size: 1.5em;
+	margin-left: 0px;
+
+
+}
+
+#emaillabel{
+	padding-left: 80px;
+}
+
+.signinbutton{
+	margin-top: 25px;
+	margin-right: 60px;
+	margin-left: 20px;
+	padding: 15px 155px;
+	border-radius: 25px;
+	color: #ffffff;
+	background-color: #C83539;
+	text-decoration: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+.signinbutton:hover{
+	background-color: #E5414D;
 }
 
 
 
-
-
-
+/*
+/////////////////////
+	MEDIA QUERIES
+/////////////////////
+*/
 
 /* Tablet */
 @media screen and (max-width: 1024px) {
@@ -379,11 +479,6 @@ input[type=submit] {
 	line-height: 1em;
 }
 
-}
-
-
-
-
 /* Mobile */
 @media screen and (max-width: 480px) {
 
@@ -391,12 +486,10 @@ input[type=submit] {
 	width: 100%;
 	text-align: center;
 }
-
 #nav {
 	width:100%;
 	margin:5px 0;
 }
-
 .navigation{
 	width: 100%;
 	float: left;
@@ -404,20 +497,16 @@ input[type=submit] {
 	margin: 0;
 	padding:0;
 }
-
 .navigation li{
 	float: left;
 	width:25%;
 }
-
 .slide{
 	background-attachment: fixed;
 	width:100%;
 	position: relative;
 	padding:150px 0;
 }
-
-
 #slide1 h1 {
 	line-height: 1em;
 }
@@ -446,6 +535,6 @@ input[type=submit] {
 
 
 
-}
+
 
 
